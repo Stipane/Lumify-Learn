@@ -1,0 +1,159 @@
+
+
+/* Styling common to all pages
+    some code commented out to remove colouring  */
+
+/*---------------------------------------------------------------------*/
+
+body {
+    /* background-color: antiquewhite; */
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* .search {
+    background-color: white;
+    border: solid 2px orange;
+    color: orange;
+    padding: 10px;
+} */
+
+.container {
+    display: grid;
+    flex-direction: row;
+}
+
+/* Header/Navbar section */
+/*---------------------------------------------------------------------*/
+
+.navbar {
+    justify-content: space-evenly;
+}
+
+span {
+    border: solid 1px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+/* button {
+    border-color: orange;
+    border-radius: 10px;
+} */
+
+ul {
+    list-style: none;  
+}
+
+/* li {
+    color: brown;
+} */
+
+a {
+    text-decoration: none;
+}
+
+/* Footer section */
+/*---------------------------------------------------------------------*/
+
+.footBottom {    
+    /* background-color: black;
+    color: orange; */
+    margin-top: 20px;
+}
+
+footer {
+    /* background-color: black; */
+    /* color: orange; */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* index.html page styling */
+/*---------------------------------------------------------------------*/
+
+/* Search Form */
+
+.searchHeading {
+    border: solid 1px;
+    padding: 10px;
+}
+
+/* Main Picture */
+.homePic {
+    margin: auto;
+    border: solid 2px black;
+    width: 1300px;
+    height: 500px;
+    text-align: center;
+}
+
+/* search.html page styling */
+/*---------------------------------------------------------------------*/
+
+/* Plans list section */
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+.contact {
+    border: solid 2px black;    
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+.contact > p {
+    text-align: center;    
+}
+
+nav {
+    margin: auto;
+}
+
+.detail {    
+    margin: 30px;
+    }
+
+h4 {
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* detail.html page styling */
+/*---------------------------------------------------------------------*/
+
+/* Plan detail section */
+
+.plan {
+    margin: auto;
+    text-align: center;
+}
+
+/* Enquiry form section */
+.enquire {
+    border: solid 2px;
+    padding: 10px;
+}
+
+/* Styling code for colour version if required */
+
+/* h1, h2 {
+    text-align: center;
+    color: orange;
+} */

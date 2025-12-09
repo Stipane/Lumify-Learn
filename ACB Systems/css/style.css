@@ -1,0 +1,201 @@
+/* Sets whole page with no margin */
+body {
+    margin: 0;
+}
+
+/* styles all h1 & h2 elements */
+h1, h2 {
+    color: #679bf0;
+    text-align: center;
+}
+
+/* <!--header section--> */
+.item-a {
+    grid-area: header;
+    background-color: #d5e1f5;
+    height: 125px;
+    text-align: center;
+    border-bottom: solid 2px #679bf0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > button > a {
+    text-decoration: none;
+    color: #F7A072;
+}
+/* <!-- end of header section --> */
+
+/* <!--sidebar section--> */
+.item-b {
+    grid-area: sidebar;
+    background-color: #d5e1f5;
+    height: 100vh;
+    color: #679bf0;
+}
+
+.item-b > ul > li > a {
+    text-decoration: none;
+    color: #679bf0;
+}
+
+.item-b > ul > li {
+    margin-bottom: 50px;
+    font-size: large;
+}
+/* <!--end of sidebar section--> */
+
+/* <!--main section--> */
+.item-c {
+    grid-area: main;
+    background-color: #cfd1d4;
+    height: auto;
+    text-align: center;
+}
+
+.item-au {
+    grid-area: main;
+    background-color: #edeff2;
+    height: auto;
+    text-align: center; 
+}
+
+.item-cu {
+    grid-area: main;
+    background-color: #edeff2;
+    height: auto;
+    text-align: center; 
+}
+
+.item-c > h2 {
+    color: #679bf0;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.card {
+    border: solid 3px #679bf0;
+    border-radius: 10px;
+}
+
+.item-c > .vision > p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 10px;
+}
+
+.item-c > .history > p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 10px;
+}
+
+/* Contact form alignmemnt */
+.p1-contact {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 20px;
+    border: solid 3px #679bf0;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.form {    
+    margin: 20px 0 20px 0;    
+}
+
+/* Services page main section */
+.service {
+    max-width: 300px;
+    border: solid 2px #679bf0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.service > p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* <!--end of main section--> */
+
+/* <!--footer section--> */
+.item-d {
+    grid-area: footer;
+    background-color: #679bf0;
+    height: 5vh;
+    text-align: center;
+}
+/* <!--end of footer section--> */
+
+/* <!--call-to-action section--> */
+.item-e {
+    grid-area: cta;
+    height: auto;
+    text-align: center;
+    background-color: #cfd1d4;
+    border-bottom: solid 2px #679bf0;
+}
+
+.item-e > p {
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.tech {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* <!--end of call-to-action section--> */
+
+/* sets the page layout for home page */
+.container {
+    display: grid;
+    grid-template-columns: 15% 30% 30% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar cta cta cta"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+/* sets the page layout for about-us, services, contact-us pages */
+.container-services {
+    display: grid;
+    grid-template-columns: 15% 30% 30% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}

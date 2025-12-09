@@ -1,0 +1,86 @@
+.palette1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.palette2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.colour1 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(89, 41, 65)
+}
+
+.colour2 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(216, 213, 219)
+}
+
+.colour3 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(0, 15, 8);
+    color: white;
+}
+
+.colour4 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(132, 121, 150)
+}
+
+.colour5 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(238, 192, 198)
+}
+
+.colour6 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(76, 46, 5)
+}
+
+.colour7 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(212, 203, 229)
+}
+
+.colour8 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(122, 101, 99)
+}
+
+.colour9 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(163, 196, 188)
+}
+
+.colour10 {
+    height: 300px;
+    width: 300px;
+    border: solid 2px;
+    background-color: rgb(255, 253, 130)
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: monospace;
+	margin: 20px 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* set styling for the input section */
+.container {
+	background-color: lightgray;
+	align-items: center;
+	margin: 5% auto 0;
+	border: solid 2px;
+	border-radius: 10px;
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	font-size: 2rem;
+	height: 55vh;
+}
+
+input {
+	margin: auto;
+	width: 50%;
+	padding: 5px;
+	vertical-align: middle;
+	font-size: 1.5rem;
+}
+
+select {
+	font-size: 2rem;
+}
+
+option {
+	width: 100%;
+}
+
+/* Set styling for the output section */
+.result {
+	background-color: black;
+	color: white;
+	border: solid 2px;
+	border-radius: 10px;
+	width: 90%;
+	margin: 40px auto 10px auto;
+	text-align: center;
+	padding: 10px;
+	font-size: 2rem;
+}
