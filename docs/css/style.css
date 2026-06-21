@@ -1,0 +1,644 @@
+/* Universal CSS */
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(212, 203, 229);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: blueviolet;
+    border: double 3px black;
+    border-radius: 10px;
+    max-width: fit-content;
+    padding: 3px 15px;
+    background-color: paleturquoise;
+    margin: 10px auto;
+}
+
+.container-fluid {
+    display: grid;
+    margin-left: 0;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "side-nav cta cta cta"
+    "side-nav adoption adoption adoption"
+    "side-nav main main main"
+    "footer footer footer footer";
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;    
+}
+
+hr {    
+    width: 100%;
+}
+
+/* Header CSS */
+
+#header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(212, 203, 229);
+}
+
+header > p {
+    text-align: center;
+    margin-top: 10px;
+}
+.image {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 203, 229);
+    padding-left: 30px;    
+}
+
+/* Header drop down CSS */
+.topdd {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px auto;
+}
+
+#navbarSupportedContent {
+    background-color: rgb(212, 203, 229);
+}
+
+.navbar-toggler {
+    background-color: rgb(212, 203, 229);
+    width: 100%;
+}
+
+
+/* Header RHS section */
+.accCartSrch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    background-color: rgb(212, 203, 229);
+}
+
+.accCartSrch > a > img {
+    padding-right: 40px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgb(132, 121, 150);
+    color: black;
+    padding: 8px 11px 8px 0;
+    font-size: 16px;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 100%;
+    padding-left: 5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: lightgray;
+  }
+
+/* Sidebar nav menu */
+.sidebarNav {
+    /* display: flex; */
+    background-color: rgb(212, 203, 229);
+    grid-area: side-nav;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    position: fixed;
+    margin-top: 207px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+
+
+
+#collapsibleNavbar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* call-to-action section */
+.area1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(238, 192, 198);
+    grid-area: cta;
+    padding-top: 20px;
+    text-align: center;
+    border-top: solid 2px grey;
+    border-left: solid 2px grey;
+    border-right: solid 2px grey;
+}
+
+.container > .area1 > a > p {
+    font-weight: bold;
+}
+
+/* Adoption section */
+.area2 > .adoption > h2 {
+    color: purple;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: auto;
+    text-decoration: underline;    
+}
+
+.area2 {
+    grid-area: adoption;
+    background-image: url("/images/pawprint.avif");
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border-left: solid 2px grey;
+    border-right: solid 2px grey;
+}
+
+.adoption > p > a {
+    text-decoration: underline;
+}
+
+.adoption > p {
+    background-color: yellow;
+}
+
+.adoption > h3 {
+    font-weight: 900;
+}
+
+.area2 > .adoptPic > img {
+    border-radius: 50%;
+    border: solid 2px purple;
+}
+
+.card-body > h2 {
+    color: green;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.card-header > h3 {
+    font-weight: bold;
+}
+
+.card {
+    background-color: rgb(238, 192, 198);
+}
+
+/* Main section */
+.area3 {
+    background-color: rgb(122, 121, 150);
+    grid-area: main;
+    display: grid;
+    border-left: solid 2px grey;
+    border-right: solid 2px grey;
+    border-bottom: solid 2px grey;
+}
+
+.topRow, .bottomRow {
+    display: grid;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.wash {
+    background-color: #ef6262;
+}
+
+.adopt {
+    background-color: rgb(238, 192, 198);
+}
+
+.vet {
+    background-color: rgb(163, 196, 188);
+}
+
+.food {
+    background-color: rgb(122, 101, 99);
+}
+
+.acc {
+    background-color: rgb(89, 41, 65);
+}
+
+.train {
+    background-color: rgb(216, 213, 219);
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Footer section */
+.footer {
+    grid-area: footer;
+    color: white;
+    margin-top:0;
+    background-color: rgb(0, 15, 8);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer > p {
+    margin-top: 0;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer > .footerMenu > p > a {
+    color: white;
+}
+
+.footerLogo > p > a {
+    color: white;
+}
+
+/* Adoptions page CSS */
+#adoptMain {
+    grid-area: main;
+    display: grid;
+    background-color: rgb(232, 192, 198);
+    justify-content: center;
+    border: solid 2px blueviolet;
+    padding: 20px 20px;
+}
+
+#dogs, #cats, #birds, #fish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border: solid 3px blueviolet;
+    border-radius: 10px;    
+    padding-top: 20px;
+}
+
+/* About page CSS */
+#aboutMain {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(163, 196, 188);
+    border: solid 2px blue;
+    padding-bottom: 20px;
+}
+
+#mainBody1 {
+    display: grid;
+    padding: 0 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#mainBody2 {
+    padding: 0 20px;
+}
+
+#staff {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.aboutHeading {
+    text-align: center;
+}
+
+.profile {
+    margin: 20px 90px;
+}
+
+/* Why page CSS */
+
+#mainWhy {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(89, 41, 65);
+    border: solid 2px grey;
+    padding-bottom: 20px;
+}
+
+#benefits {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#benefits img {
+    margin: 10px;
+}
+
+.reasons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 20px;
+}
+
+/* Contact page CSS */
+
+#contactMain {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(122, 101, 99);
+    border: solid 2px grey;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(122, 101, 99);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact {
+    border-radius: 5px;
+    background-color: rgb(216, 213, 219);
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .contact > p {
+    font-weight: bold;
+  }
+ .top-nav{
+    display: none;
+ }
+
+/* Media Queries Home Page */
+
+@media screen and (max-width: 992px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #c7c4c3, #e8e2da);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height: 50px;
+        padding: 1em;
+      }
+      
+      .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-top:0x;
+        padding: 0;
+      }
+      
+      .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+      }
+      
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #menu-toggle {
+        display: none;
+      }
+      
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #100f0f;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+      
+      .menu-button::before {
+        content: '';
+        margin-top: -8px;
+      }
+      
+      .menu-button::after {
+        content: '';
+        margin-top: 8px;
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
+      
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      } 
+    .menu-button-container {
+        display: flex;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 430px;
+        left: 0;
+        flex-direction: column;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+      }
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+      }
+      .menu li a{
+        color: white;
+      }
+      .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
+    #collapsibleNavbar{
+        display: none;
+    }
+    }
+@media screen and (max-width: 992px) {
+    .area1, .area2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row1, .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Queries About Page */
+
+@media screen and (max-width: 992px) {
+    #staff {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Queries Adoptions Page */
+
+@media screen and (max-width: 992px) {
+    #dogs, #cats, #birds, #fish {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Queries Why Page */
+
+@media screen and (max-width:992px) {
+    #benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
